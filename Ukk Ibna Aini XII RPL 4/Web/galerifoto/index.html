@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="css/style-index.css">
+    <title>Index</title>
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url('img/pantai.jpg') center/cover no-repeat;
+    overflow: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: url('img/pantai.jpg') center/cover no-repeat;
+    /* background-color: #B47B84; */
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #B47B84; */
+    background: url('img/pantai.jpg') center/cover no-repeat;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    border: 1px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 50px;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    color: #000000;
+    background-color: #fff;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+    .hero-section {
+        background: url('img/pantai.jpg') center/cover no-repeat;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        background-color: #fff;
+        color: #B47B84;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .cta-button:hover {
+        background-color: #B47B84;
+        color: #fff;
+    }
+    
+footer {
+    width: 100%;
+    text-align: center;
+    /* background-color: #B47B84; */
+    background: url('img/pantai.jpg') center/cover no-repeat;
+    position: fixed;
+    padding: 15px 0;
+    bottom: 0;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+    }
+    .icons {
+        display: inline-flex;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+
+
+
+}
+</style>
+
+<body>
+
+    <header class="header">
+        <a href="dashboard.php" class="logo"><i class="fa-solid fa-camera"></i> Zaura Galeri</a>
+
+        <nav class="navbar">
+            <a href="login-register.php" onclick="toggleNavbar()">Login</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>Selamat Datang di Zaura Galeri</h1>
+        <p>Temukan keindahan dalam setiap foto. Jelajahi koleksi foto kami yang menakjubkan.</p>
+        <a href="galeri.php" class="cta-button">Jelajahi Galeri</a>
+    </div>
+
+    
+
+    
+
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2024 - Website Galeri Foto.</small>
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #C7C8CC;
+    overflow: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #B47B84;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #B47B84;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.section{
+    padding: 25px 0;
+    border: 1px solid #C7C8CC;
+    margin-bottom: 45px;
+    background: #C7C8CC;
+}
+
+.detailfoto{
+    margin: 0 auto;
+    width: 78%;
+    font-size: 1.5rem;
+}
+
+.box{
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    /* width: 80%; */
+    margin-bottom: 15px;
+    height: auto;
+}
+.col-2 {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+
+}
+.col-2-1 {
+    /* width: max-content; */
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    border: 1px solid;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.col-2 .judul {
+    text-align: center;
+    font-size: 1.5em;
+    color:  #000000;
+    border: 2px solid;
+    margin-bottom: 10px;
+}
+
+.col-2-gambar {
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+    /* border: 1px solid; */
+}
+.col-2 img {
+    box-sizing: border-box;
+    max-height: 25rem;
+    max-width: 100%;
+
+}
+
+.col-2 .detail {
+    min-width: 40%;
+    border: 1px solid #000000;
+}
+.col-2 .detail-one {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.komentar-section {
+    overflow-y: auto; 
+    /* max-height: 16rem; */
+    height: 300px; 
+
+
+}
+.komentarjudul {
+    border-bottom: 1px solid #e1e0e0;
+    border-top: 1px solid #383838;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.komentar-list {
+    display: block;
+    margin-top: 10px;
+}
+
+.komentar-item {
+    border: 1px solid #707070;
+    padding: 5px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 12px 0px 12px 0;
+    word-wrap: break-word;
+    max-width: 400px;
+}
+
+.komentar-item h4 {
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+.komentar-item h5 {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #3c3c3c;
+}
+
+.komentar-item h6 {
+    font-size: 0.8em;
+    color: #888;
+}
+.comment-container {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 12px 0px 12px 0;
+    word-wrap: break-word;
+    max-width: 400px;
+    position: relative;
+}
+.comment-container:hover {
+    border: 1px solid #000000;
+}
+
+.comment-container .hpskomen {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #a82121;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    
+}
+
+.comment-container:hover .hpskomen {
+    opacity: 1; 
+}
+
+.comment-container .hpskomen i:hover {
+    color: #ff0000;
+}
+
+.col-2 .detail-two {
+    border-top: 1px solid #adaaaa;
+    max-height: 250px;
+    height: auto;
+    padding: 8px;
+    bottom: 10px;
+}
+
+.atribut{
+    font-size: 18px;
+    margin: 5px;
+}
+
+#like:hover{
+    color: #3378ad;
+}
+#dislike:hover{
+    color: #d22727;
+}
+
+.col-2 .boxkomen {
+    margin-left: 7px;
+    text-decoration: none;
+    color: #444242;
+    font-size: 22px;
+}
+.boxkomen i:hover {
+    color: blue; 
+}
+
+#komen{
+    width: 100%;
+    display: flex;
+}
+
+#boxkomen {
+    width: 80%;
+    height: 40px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    bottom: 0;
+}
+
+.btnk {
+    width: 20%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    bottom: 0;
+}
+
+.btnk:hover {
+    background-color: #45a049;
+}
+
+.download{
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+.download:hover{
+    color: #004c86;
+}
+
+
+.col-2 .nama {
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+
+.col-2 .tanggal {
+    font-size: 0.8em;
+    color: #d3d0d0;
+
+}
+
+
+.col-2 .album {
+    font-size: 1em; 
+    margin-top: 7px;
+
+}
+.col-2 .deskripsi {
+    font-size: 1em; 
+    margin-top: 7px;
+    margin-bottom: 17px;
+    color: #3b3b3b;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #B47B84;
+    position: fixed;
+    padding: 15px 0;
+    bottom: 0;
+    color: white;
+}
+
+#hp{
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+    }
+    .icons {
+        display: inline-flex;
+    }
+
+    .navbar {
+        border-top: 2px solid white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #B47B84;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%; /* Adjust the width as needed */
+    }
+
+    .detailfoto{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 100%; 
+}
+
+.box{
+    height: auto;
+}
+
+.col-2 {
+    width: 95%;
+    flex-direction: column;
+    border: 1px solid;
+
+}
+.col-2-1 {
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.komentar-section {
+    height: auto;
+}
+
+.col-2 .detail-one {
+    position: relative;
+    bottom: 0;
+}
+.col-2 .detail-two {
+    height: auto;
+}
+
+
+#komen{
+    width: 100%;
+    display: block;
+}
+
+#boxkomen {
+    width: 100%;
+    margin-bottom: 5px;
+    bottom: 0;
+}
+
+.btnk {
+    width: 100%;
+}
+
+#hp{
+    display: block;
+}
+
+#laptop{
+    display: none;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    .navbar {
+        border-top: 2px solid white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #B47B84;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    /* tes */
+.detailfoto{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 100%; 
+}
+
+.box{
+    height: auto;
+}
+
+.col-2 {
+    width: 95%;
+    flex-direction: column;
+    border: 1px solid;
+
+}
+.col-2-1 {
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.komentar-section {
+    height: auto;
+}
+
+.col-2 .detail-one {
+    position: relative;
+    bottom: 0;
+}
+.col-2 .detail-two {
+    height: auto;
+}
+
+
+#komen{
+    width: 100%;
+    display: block;
+}
+
+#boxkomen {
+    width: 100%;
+    margin-bottom: 5px;
+    bottom: 0;
+}
+
+.btnk {
+    width: 100%;
+}
+
+#hp{
+    display: block;
+}
+
+#laptop{
+    display: none;
+}
+
+}
